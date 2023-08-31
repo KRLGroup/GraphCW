@@ -10,14 +10,14 @@ It consists of a module which can be inserted straight after a convolutional lay
 In the _config.yaml_ file in the config folder, you need to change the paths in the _base_dir_, _statistics_dir_, and _concept_dir_ items.
 In order to use concept whitening, you will need to extract the molecular properties from the dataset's molecules.
 This can be done by executing the command:
-'''
+```
 python extract_molecular_concepts.py
-'''
+```
 
 To train a new model or test a pre-trained one, execute the command
-'''
+```
 python train_gnns.py
-'''
+```
 after setting the desired parameters by changing the files in the config folder.
 
 ## Contact
