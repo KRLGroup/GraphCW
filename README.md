@@ -1,6 +1,6 @@
 # Explainable AI in Drug Discovery: Self-interpretable Graph Neural Network for molecular property prediction using Concept Whitening
 
-This is the official repository of the paper "Explainable AI in Drug Discovery: Self-interpretable Graph Neural Network for molecular property prediction using Concept Whitening. _Michela Proietti_,_Alessio Ragno_ _Biagio La Rosa_, _Rino Ragno_, and _Roberto Capobianco_. Springer Machine Learning Journal (2023)".
+This is the official repository of the paper "Explainable AI in Drug Discovery: Self-interpretable Graph Neural Network for molecular property prediction using Concept Whitening. _Michela Proietti_,_Alessio Ragno_ _Biagio La Rosa_, _Rino Ragno_, and _Roberto Capobianco_. Machine Learning (2024)".
 
 ## Description
 This repository implements the first concept-based explanability method for graph neural networks, obtained by adapting the code for (https://github.com/zhiCHEN96/ConceptWhitening "Concept Whitening").
@@ -19,6 +19,21 @@ To train a new model or test a pre-trained one, execute the command
 python train_gnns.py
 ```
 after setting the desired parameters by changing the files in the config folder.
+
+## Citation
+```
+
+@article{proietti2024explainable,
+  title={Explainable AI in drug discovery: self-interpretable graph neural network for molecular property prediction using concept whitening},
+  author={Proietti, Michela and Ragno, Alessio and Rosa, Biagio La and Ragno, Rino and Capobianco, Roberto},
+  journal={Machine Learning},
+  volume={113},
+  number={4},
+  pages={2013--2044},
+  year={2024},
+  publisher={Springer}
+}
+```
 
 ## Contact
 If you have any question, do not hesitate to contact us at mproietti[at]diag[dot]uniroma1[dot]it.
