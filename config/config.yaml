@@ -5,14 +5,14 @@ defaults:
 device_id: 0
 model_name: GCN_3l
 record_filename: none
-base_dir: /home/michelaproietti/ConceptWhitening_GNNs/
-statistics_dir: /home/michelaproietti/ConceptWhitening_GNNs/trainings/
-statistics_file: gat_graphnorm_cw_topk_pool.json
+base_dir: ~/GraphCW/
+statistics_dir: ~/GraphCW/trainings/
+statistics_file: gat_cw_max.json
 stratified: false
 train_flag: false
 
 concept_whitening: true
-concept_dir: /home/michelaproietti/ConceptWhitening_GNNs/molecular_concepts/
+concept_dir: ~/GraphCW/molecular_concepts/
 concepts: 'qed,logp,tpsa,NOCount,n_heteroatoms'
 
 # ClinTox 'qed,mol_weight,hba,logp,n_heteroatoms'
