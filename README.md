@@ -12,19 +12,19 @@ It consists of a module which can be inserted straight after a convolutional lay
 ```
 git clone https://github.com/KRLGroup/GraphCW.git
 ```
-4) Move inside the Dockerfile directory:
+3) Move inside the Dockerfile directory:
 ```
 cd Dockerfile
 ```
-6) Build the custom image:
+4) Build the custom image:
 ```
 docker build -t graphcw:1.0 .
 ```
-8) Run the docker machine, substituting the absolute path to the cloned repo to <path_to_project_dir>:
+5) Run the docker machine, substituting the absolute path to the cloned repo to <path_to_project_dir>:
 ```
 docker run -v <path_to_project_dir>:<path_to_project_dir> -w <path_to_project_dir> -it --gpus all graphcw:1.0 bash
 ```
-9) Inside the container, run the following commands to create a conda environment with the required libraries:
+6) Inside the container, run the following commands to create a conda environment with the required libraries:
 ```
 conda create -n graphcw python==3.9
 conda activate graphcw
