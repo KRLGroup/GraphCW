@@ -23,7 +23,7 @@ def load_trained_model(config, dataset):
     model = model.to(device)
     
     # CHANGE MODEL TO LOAD HERE
-    model_path = os.path.join(model_dir+dataset.name+'/', config.models.gnn_name+"_graphnorm_baseline.pth")
+    model_path = os.path.join(model_dir+dataset.name+'/', config.models.gnn_name+"_baseline.pth")
     print(f'Loading model: {model_path}')
 
     if os.path.isfile(model_path):
