@@ -24,7 +24,7 @@ docker build -t graphcw:1.0 .
 ```
 docker run -v <path_to_project_dir>:<path_to_project_dir> -w <path_to_project_dir> -it --gpus all graphcw:1.0 bash
 ```
-10) Inside the container, run the following commands to create a conda environment with the required libraries:
+9) Inside the container, run the following commands to create a conda environment with the required libraries:
 ```
 conda create -n graphcw python==3.9
 conda activate graphcw
@@ -36,8 +36,8 @@ pip install dive-into-graphs==0.1.2 deepchem==2.8.0 rdkit-pypi==2021.9.5.1
 ```
 
 ## Usage
-Change the _config.yaml_ file to design your own experiments.
-In order to use concept whitening, you will need to extract the molecular properties from the dataset's molecules.
+Change the _config.yaml_ file to design your own experiments. To train the baseline models with standard normalization layers, set the _train_flag_ to True and the _concept_whitening_ flag to False. Instead, if you already have a pre-trained baseline, and you want to fine-tune it after replacing the normalization layer with concept whitening layer, set the _train_flag_ to False and the _concept_whitening_ flag to True.
+In order to use concept whitening, you will need to first extract the molecular properties from the dataset's molecules.
 This can be done by executing the command:
 ```
 python extract_molecular_concepts.py
